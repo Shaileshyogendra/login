@@ -1,19 +1,27 @@
-body
+body,html
 {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.img
+
+.bg
+{
+    background-image: url("nature1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/*.img
 {
     position: fixed; 
     top: 0; 
     left: 0; 
       
-    /* Preserve aspet ratio */
     min-width: 100%;
     min-height: 100%;
-}
+}*/
 
 .loginBox
 {
@@ -22,10 +30,11 @@ body
     left: 50%;
     transform: translate(-50%,-50%);
     width: 350px;
-    height: 500px;
+    height: auto;
     padding: 80px 40px;
     box-sizing: border-box;
     background: rgba(0,0,0,.5);
+    display: inline-block;
 }
 .user
 {
